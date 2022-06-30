@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Nordic44 CDPSM Test model.
+	Created: 2018-07-04T18:00
+-->
+<!--
+	This is a new profile in CGMES 2.5 and are serialized according to IEC 61970-552 Ed2 version 2. 
+-->
+<?iec61970-552 version="2.0"?>
+
+<rdf:RDF xmlns:fw="http://entsoe.eu/CIM/Framework/1/0#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!--
+	A Manifest Specification is created to version the sequence of communication - manifest. 
+-->
+
+<fw:ManifestSpecification rdf:about="urn:uuid:8c3289ed-d837-4a84-8148-6011f3c3f1c1">
+	<fw:FrameworkIdentifiedObject.description>Nordic44 CDPSM Test Manifest Specification</fw:FrameworkIdentifiedObject.description>
+	<fw:FrameworkIdentifiedObject.modelAuthority>http://www.Statnett.no/Asset/Nordic44_CGM</fw:FrameworkIdentifiedObject.modelAuthority>
+	<fw:FrameworkIdentifiedObject.name>MFS Nordic44 CDPSM Test</fw:FrameworkIdentifiedObject.name>
+</fw:ManifestSpecification>
+
+ <!--
+	A Manifest that defines this communication exchange with the given version. 
+-->
+<fw:Manifest rdf:about="urn:uuid:2e3edebc-b2db-4b37-8c12-6423aeb70e5d">
+	<fw:FrameworkIdentifiedObject.description>Nordic44 CDPSM Test Manifest Version 1</fw:FrameworkIdentifiedObject.description>
+	<fw:FrameworkIdentifiedObject.modelAuthority>http://www.Statnett.no/Asset/Nordic44_CGM</fw:FrameworkIdentifiedObject.modelAuthority>
+	<fw:FrameworkIdentifiedObject.name>Nordic44 CDPSM Test Manifest Version 1</fw:FrameworkIdentifiedObject.name>
+	<fw:FrameworkVersionObject.created>2018-05-09T16:11:55.1404051Z</fw:FrameworkVersionObject.created>
+	<fw:FrameworkVersionObject.version>1</fw:FrameworkVersionObject.version>
+	<fw:Manifest.ManifestSpecification rdf:resource="urn:uuid:8c3289ed-d837-4a84-8148-6011f3c3f1c1"/>
+</fw:Manifest>
+
+ <!--
+	No frames are defined in this test case - This might be added later.
+-->
+ 
+<fw:FullModelSpecification rdf:about="urn:uuid:392035c0-730e-4408-bae1-17a4ea313b2f">
+	<fw:FrameworkIdentifiedObject.description>CDPSM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region.</fw:FrameworkIdentifiedObject.description>
+	<fw:FrameworkIdentifiedObject.modelAuthority>http://www.Statnett.no/Asset/Nordic44_CDPSM</fw:FrameworkIdentifiedObject.modelAuthority>
+	<fw:FrameworkIdentifiedObject.name>Nordic44_CDPSM</fw:FrameworkIdentifiedObject.name>
+	<fw:FrameworkVersionObject.created>2018-05-09T16:11:55.1404051Z</fw:FrameworkVersionObject.created>
+	<fw:ModelSpecification.ontology>http://entsoe.eu/CIM/CGMES/2/5#</fw:ModelSpecification.ontology>
+	<fw:ModelSpecification.type>Asset</fw:ModelSpecification.type>	
+</fw:FullModelSpecification>
+ 
+  <!--
+	The full model after the merge of the different profiles models. Note the rdf:ID for the Full Model does not match any of the rdf:ID in any of the instance file, since the full model 
+	has not been materialized. If a full model in one instance file is exported this instance file will have this rdf:ID.  
+-->
+ <fw:FullModel rdf:about="urn:uuid:2e9f8d4c-f2a8-440c-9cc1-bbe2cc9a8001">
+	<fw:FrameworkIdentifiedObject.modelAuthority>http://www.Statnett.no/Asset/Nordic44_CDPSM</fw:FrameworkIdentifiedObject.modelAuthority>
+	<fw:FrameworkIdentifiedObject.name>Nordic44_CDPSM_v1_1</fw:FrameworkIdentifiedObject.name>
+	<fw:FrameworkVersionObject.created>2018-05-10T13:47:55.000Z</fw:FrameworkVersionObject.created>
+	<fw:FrameworkVersionObject.version>1</fw:FrameworkVersionObject.version>
+	<fw:Model.profile>http://iec.ch/TC57/CIM/Asset/2/0</fw:Model.profile>
+	<fw:Model.profile>http://iec.ch/TC57/CIM/AssetCatalogue/2/0</fw:Model.profile>
+	<fw:Model.profile>http://iec.ch/TC57/CIM/ElectricalProperties/2/0</fw:Model.profile>
+	<fw:Model.validFrom>2015-03-06T01:30:00.0000000Z</fw:Model.validFrom>
+	<fw:Model.ModelSpecification rdf:resource="urn:uuid:392035c0-730e-4408-bae1-17a4ea313b2f"/>
+</fw:FullModel>
+
+
+  <!--
+	The full model specification is the persistent part of the Asset model.  
+-->
+ 
+<fw:FullModelSpecification rdf:about="urn:uuid:6faf8fe8-c3b7-4dc6-8244-75c83d6419fe">
+	<fw:FrameworkIdentifiedObject.description>The Asset CDPSM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region.</fw:FrameworkIdentifiedObject.description>
+	<fw:FrameworkIdentifiedObject.modelAuthority>http://www.Statnett.no/Asset/Nordic44_CDPSM</fw:FrameworkIdentifiedObject.modelAuthority>
+	<fw:FrameworkIdentifiedObject.name>Nordic44_Asset</fw:FrameworkIdentifiedObject.name>
+	<fw:FrameworkVersionObject.created>2018-05-09T16:11:55.1404051Z</fw:FrameworkVersionObject.created>
+	<fw:ModelSpecification.ontology>http://entsoe.eu/CIM/CGMES/2/5#</fw:ModelSpecification.ontology>
+	<fw:ModelSpecification.type>Asset</fw:ModelSpecification.type>	
+</fw:FullModelSpecification>
+  <!--
+	This is the same model and header information as for the EQ file.  
+-->
+ <fw:FullModel rdf:about="urn:uuid:eb4d92e6-d4da-11e7-9296-cec278b6b50a">
+	<fw:FrameworkIdentifiedObject.modelAuthority>http://www.Statnett.no/Asset/Nordic44_CDPSM</fw:FrameworkIdentifiedObject.modelAuthority>
+	<fw:FrameworkIdentifiedObject.name>Nordic44_v2_Asset</fw:FrameworkIdentifiedObject.name>
+	<fw:FrameworkVersionObject.created>2018-02-23T14:42:00Z</fw:FrameworkVersionObject.created>
+	<fw:FrameworkVersionObject.version>02</fw:FrameworkVersionObject.version>
+	<fw:Model.profile>http://iec.ch/TC57/CIM/Asset/2/0</fw:Model.profile>
+	<fw:Model.profile>http://iec.ch/TC57/CIM/ElectricalProperties/2/0</fw:Model.profile>
+	<fw:Model.profile>http://iec.ch/TC57/CIM/AssetCatalogue/2/0</fw:Model.profile>
+	<fw:Model.validFrom>2015-03-06T01:30:00.0000000Z</fw:Model.validFrom>
+	<fw:Model.ModelSpecification rdf:resource="urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1"/>
+</fw:FullModel>
+
+
+</rdf:RDF>

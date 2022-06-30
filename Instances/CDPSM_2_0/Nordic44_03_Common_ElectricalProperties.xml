@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?iec61970-552 version="2.0"?>
+
+<!-- Change log:
+	2018-03-22: Initial version
+	2018-08-17: Version 2. 
+				Updated profile reference from http://iec.ch/TC57/61968-13/ElectricalProperties/1/0 to http://iec.ch/TC57/CIM/ElectricalProperties/2/0		
+	2019-05-07: Version 3.
+				Update the namespace from CIM from "http://iec.ch/TC57/2013/CIM-schema-cim16#" to "http://iec.ch/TC57/CIM/CIM100#"	
+	
+-->
+
+<rdf:RDF  xmlns:cim="http://iec.ch/TC57/CIM/CIM100#" 
+		xmlns:entsoe2="http://entsoe.eu/CIM/SchemaExtension/3/2#"
+		xmlns:entsoe="http://entsoe.eu/CIM/SchemaExtension/3/1#" 
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
+		>		
+	
+	<!-- The header information could be replaced by Manifest profile. The header is added to identify relevant information. -->
+  <md:FullModel rdf:about="urn:uuid:34b4ffa4-1957-48c1-b60a-7040373bdcb6">
+    <md:Model.created>2018-03-22T10:43:00Z</md:Model.created>
+    <md:Model.scenarioTime>2018-03-22T00:00:00Z</md:Model.scenarioTime>
+    <md:Model.version>03</md:Model.version>
+    <md:Model.description>CGM Test model Common ElectricalProperties</md:Model.description>
+    <md:Model.modelingAuthoritySet>http://www.Statnett.no/Asset/Nordic44</md:Model.modelingAuthoritySet>
+	<!-- ToDo: Need to check the profile reference -->
+    <md:Model.profile>http://iec.ch/TC57/CIM/ElectricalProperties/2/0</md:Model.profile>
+  </md:FullModel>
+
+  
+   	<!--	Organisation Data. OperatingParticipant -->
+	<cim:OperatingParticipant rdf:about="urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3">
+		<cim:IdentifiedObject.name>Operating Participant A</cim:IdentifiedObject.name>
+	</cim:OperatingParticipant>
+
+	<cim:OperatingParticipant rdf:about="urn:uuid:18e06751-54c1-44c8-86d9-0e9f5f358289">
+		<cim:IdentifiedObject.name>Operating Participant B</cim:IdentifiedObject.name>
+	</cim:OperatingParticipant>
+	
+	<cim:SubGeographicalRegion rdf:about="urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:SubGeographicalRegion.Region rdf:resource="urn:uuid:2dd9048c-bdfb-11e5-94fa-c8f73332c8f4"/>
+		<cim:IdentifiedObject.name>NO2 SGR</cim:IdentifiedObject.name>
+	</cim:SubGeographicalRegion>
+	
+	<cim:GeographicalRegion rdf:about="urn:uuid:2dd9048c-bdfb-11e5-94fa-c8f73332c8f4">
+		<cim:IdentifiedObject.name>NO</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.description>Nordic</cim:IdentifiedObject.description>
+	</cim:GeographicalRegion>
+	
+	<cim:BaseVoltage rdf:about="urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4">
+		<cim:BaseVoltage.nominalVoltage>300</cim:BaseVoltage.nominalVoltage>
+		<cim:IdentifiedObject.name>300kV</cim:IdentifiedObject.name>
+	</cim:BaseVoltage>
+	
+	<!--	RateTemperature -->
+	<entsoe2:RateTemperature rdf:about="urn:uuid:3cab7cb8-5f26-452c-b6eb-fb54ca63793f">
+		<entsoe2:RateTemperature.value>-10</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>Negative 10 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>-10degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:fa0028bd-3ba9-44fb-821d-a8039b6eca3c">
+		<entsoe2:RateTemperature.value>-15</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>Negative 15 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>-15degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:4b214f8c-037f-4efc-a901-b566b1988519">
+		<entsoe2:RateTemperature.value>-20</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>Negative 20 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>-20degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:dbd4cffd-c36f-4007-aa15-f176a216aecc">
+		<entsoe2:RateTemperature.value>-25</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>Negative 25 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>-25degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:fbe246d3-728f-49c9-a5da-6745a319422c">
+		<entsoe2:RateTemperature.value>-30</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>Negative 30 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>-30degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:a63ce14e-fba0-4f9e-8b59-7ef2fe887ff8">
+		<entsoe2:RateTemperature.value>-5</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>Negative 5 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>-5degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:ff7357d9-e554-4431-afb5-7cc70eff9d45">
+		<entsoe2:RateTemperature.value>0</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>0 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>0degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:d3d8289b-4372-4857-ab28-52a691a7026e">
+		<entsoe2:RateTemperature.value>10</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>10 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>10degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:92e7d859-88ee-49ed-8a3e-9a7a1464c196">
+		<entsoe2:RateTemperature.value>15</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>15 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>15degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:d04f954f-2038-4a52-bdcc-deffc4628f47">
+		<entsoe2:RateTemperature.value>20</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>20 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>20degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:a12ab190-ab83-4e02-b750-78baf859d311">
+		<entsoe2:RateTemperature.value>25</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>25 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>25degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:961b67cd-7db5-441b-9efe-03f980c55c93">
+		<entsoe2:RateTemperature.value>30</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>30 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>30degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+	
+	<entsoe2:RateTemperature rdf:about="urn:uuid:5d6e4928-9f65-4c17-ba3c-2454a9ace96c">
+		<entsoe2:RateTemperature.value>5</entsoe2:RateTemperature.value>
+		<cim:IdentifiedObject.description>5 degree Celsius</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>5degreeCelsius</cim:IdentifiedObject.name>
+	</entsoe2:RateTemperature>
+
+	<!--To be fixed-->
+	<cim:OperationalLimitType rdf:about="urn:uuid:f1769a41-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>
+		<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+		<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.highVoltage"/>
+		<cim:IdentifiedObject.name>HighVoltage</cim:IdentifiedObject.name>
+	</cim:OperationalLimitType>
+	
+	<cim:OperationalLimitType rdf:about="urn:uuid:f1769a42-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+		<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+		<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.highVoltage"/>
+		<cim:IdentifiedObject.name>HighVoltage</cim:IdentifiedObject.name>
+	</cim:OperationalLimitType>
+	
+	<cim:OperationalLimitType rdf:about="urn:uuid:f1769a43-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>
+		<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+		<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.lowVoltage"/>
+		<cim:IdentifiedObject.name>LowVoltage</cim:IdentifiedObject.name>
+	</cim:OperationalLimitType>
+	
+	<cim:OperationalLimitType rdf:about="urn:uuid:f1769a44-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+		<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+		<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.lowVoltage"/>
+		<cim:IdentifiedObject.name>LowVoltage</cim:IdentifiedObject.name>
+	</cim:OperationalLimitType>
+	
+	<cim:OperationalLimitType rdf:about="urn:uuid:f1769a3e-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+		<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+		<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.patl"/>
+		<cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+	</cim:OperationalLimitType>
+	
+	<cim:OperationalLimitType rdf:about="urn:uuid:f1769a3f-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:OperationalLimitType.acceptableDuration>7200</cim:OperationalLimitType.acceptableDuration>
+		<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+		<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.tatl"/>
+		<cim:IdentifiedObject.name>TATL</cim:IdentifiedObject.name>
+	</cim:OperationalLimitType>
+	
+	<cim:OperationalLimitType rdf:about="urn:uuid:f1769a40-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>
+		<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+		<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.tatl"/>
+		<cim:IdentifiedObject.name>TATL</cim:IdentifiedObject.name>
+	</cim:OperationalLimitType>
+	
+	
+</rdf:RDF>

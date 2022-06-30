@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?iec61970-552 version="2.0"?>
+
+<!-- Version 1
+Change log:
+	2018-05-07: Initial version 
+			Change of operationresponsiblity
+	2018-08-17: Version 2. 
+	2019-05-07: Version 3.
+				Update the namespace from CIM from "http://iec.ch/TC57/2013/CIM-schema-cim16#" to "http://iec.ch/TC57/CIM/CIM100#"
+				Added <?iec61970-552 version="2.0"?>
+-->
+
+<rdf:RDF  xmlns:cim="http://iec.ch/TC57/CIM/CIM100#" 
+			xmlns:dm="http:://iec.ch/TC57/61970-552/DifferenceModel/1#" 
+			xmlns:entsoe="http://entsoe.eu/CIM/SchemaExtension/3/1#" 
+			xmlns:entsoe2="http://entsoe.eu/CIM/SchemaExtension/3/2#" 
+			xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" 
+			xmlns:pti="http://www.pti-us.com/PTI_CIM-schema-cim16#" 
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+			
+   <dm:DifferenceModel rdf:about="">
+      <dm:reverseDifferences rdf:parseType="Statements">
+	  		<cim:OperatingShare rdf:about="urn:uuid:85e930e3-5409-4f2a-b343-5fd271d1a348">
+				<!--Operating Participant A-->
+				<cim:OperatingShare.OperatingParticipant rdf:resource="urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3"/>
+			</cim:OperatingShare>
+      </dm:reverseDifferences>
+
+      <dm:forwardDifferences rdf:parseType="Statements">
+	  		<cim:OperatingShare rdf:about="urn:uuid:85e930e3-5409-4f2a-b343-5fd271d1a348">
+				<!--Operating Participant B -->
+				<cim:OperatingShare.OperatingParticipant rdf:resource="urn:uuid:18e06751-54c1-44c8-86d9-0e9f5f358289"/>
+			</cim:OperatingShare>  
+	  
+      </dm:forwardDifferences>
+   </dm:DifferenceModel>
+</rdf:RDF>

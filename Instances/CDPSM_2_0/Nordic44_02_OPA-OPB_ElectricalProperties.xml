@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?iec61970-552 version="2.0"?>
+
+<!-- Change log:
+	2018-03-22: Initial version
+	2019-05-07: Version 2.
+				Update the namespace from CIM from "http://iec.ch/TC57/2013/CIM-schema-cim16#" to "http://iec.ch/TC57/CIM/CIM100#"	
+	
+-->
+	
+	
+-->
+
+<rdf:RDF  xmlns:cim="http://iec.ch/TC57/CIM/CIM100#" 
+		xmlns:entsoe2="http://entsoe.eu/CIM/SchemaExtension/3/2#" 
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
+		>		
+	
+	<!-- The header information could be replaced by Manifest profile. The header is added to identify relevant information. -->
+  <md:FullModel rdf:about="urn:uuid:d6cde6dd-1fe0-4e6a-8a85-d5eb08e36bed">
+    <md:Model.created>2018-03-22T10:43:00Z</md:Model.created>
+    <md:Model.scenarioTime>2018-03-22T00:00:00Z</md:Model.scenarioTime>
+    <md:Model.version>01</md:Model.version>
+    <md:Model.description>CGM Test model Common ElectricalProperties</md:Model.description>
+    <md:Model.modelingAuthoritySet>http://www.Statnett.no/Asset/Nordic44</md:Model.modelingAuthoritySet>
+	<!-- ToDo: Need to check the profile reference -->
+    <md:Model.profile>http://iec.ch/TC57/61968-13/ElectricalProperties/2/0</md:Model.profile>
+	<!-- Depending on Common Electrical Properties file -->
+    <md:Model.DependentOn rdf:resource="urn:uuid:34b4ffa4-1957-48c1-b60a-7040373bdcb6" />	
+  </md:FullModel>
+
+  	<cim:Bay rdf:about="urn:uuid:f72994d8-9857-b349-a4ae-2e3c9652d5bc">
+		<cim:IdentifiedObject.name>ARENDAL 300AS1</cim:IdentifiedObject.name>
+		<cim:Bay.VoltageLevel rdf:resource="urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.description>Arendal 300 Asker 1 Bay</cim:IdentifiedObject.description>
+	</cim:Bay>
+
+	<cim:VoltageLevel rdf:about="urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:VoltageLevel.BaseVoltage rdf:resource="urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4"/>
+		<cim:VoltageLevel.Substation rdf:resource="urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.name>ARENDAL 300</cim:IdentifiedObject.name>
+	</cim:VoltageLevel>
+	
+	<cim:Substation rdf:about="urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:Substation.Region rdf:resource="urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.name>ARENDAL</cim:IdentifiedObject.name>
+	</cim:Substation>
+
+	
+	
+</rdf:RDF>

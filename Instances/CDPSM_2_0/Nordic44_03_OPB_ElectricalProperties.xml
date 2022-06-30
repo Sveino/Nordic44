@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?iec61970-552 version="2.0"?>
+
+<!-- Change log:
+	2018-03-22: Initial version based on previous example
+	2018-08-17: Version 2. 
+				Updated profile reference from http://iec.ch/TC57/61968-13/ElectricalProperties/1/0 to http://iec.ch/TC57/CIM/ElectricalProperties/2/0		
+	2019-05-07: Version 3.
+				Update the namespace from CIM from "http://iec.ch/TC57/2013/CIM-schema-cim16#" to "http://iec.ch/TC57/CIM/CIM100#"
+
+	
+-->
+
+<rdf:RDF  xmlns:cim="http://iec.ch/TC57/CIM/CIM100#" 
+		xmlns:entsoe2="http://entsoe.eu/CIM/SchemaExtension/3/2#" 
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
+		>		
+	<!-- This is currently referring to CIM16. It would need to be updated to CIM17. -->
+	
+	<!-- The header information could be replaced by Manifest profile. The header is added to identify relevant information. -->
+  <md:FullModel rdf:about="urn:uuid:1cbcbc2c-1cf1-48f0-b3fd-2c28444c21ba">
+    <md:Model.created>2018-03-20T10:43:00Z</md:Model.created>
+    <md:Model.scenarioTime>2018-03-20T00:00:00Z</md:Model.scenarioTime>
+    <md:Model.version>03</md:Model.version>
+    <md:Model.description>CGM Test model ElectricalProperties</md:Model.description>
+    <md:Model.modelingAuthoritySet>http://www.Statnett.no/Asset/Nordic44</md:Model.modelingAuthoritySet>
+	<!-- ToDo: Need to check the profile reference -->
+    <md:Model.profile>http://iec.ch/TC57/CIM/ElectricalProperties/2/0</md:Model.profile>
+	<!-- Depending on Boundary OPA-OPB  Electrical Properties file -->
+    <md:Model.DependentOn rdf:resource="urn:uuid:d6cde6dd-1fe0-4e6a-8a85-d5eb08e36bed" />		
+	<!-- Depending on AssetCatalogue file -->
+    <md:Model.DependentOn rdf:resource="urn:uuid:d869a44b5-7ab5-4bcf-9d58-1c9e750a6f20" />	
+  </md:FullModel>
+
+  
+   	<!--	Organisation Data. OperatingParticipant this is also included in the Common Electrical Properties, The common data rank higher than the content in this file -->
+	<cim:OperatingParticipant rdf:about="urn:uuid:18e06751-54c1-44c8-86d9-0e9f5f358289">
+		<cim:IdentifiedObject.name>Operating Participant B</cim:IdentifiedObject.name>
+	</cim:OperatingParticipant>
+
+	<!--	Breaker connected to multiple Switch phases-->
+	<cim:Breaker rdf:about="urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b">
+		<cim:IdentifiedObject.name>ARENDAL 300KR1 AB_S</cim:IdentifiedObject.name>
+		<cim:Equipment.EquipmentContainer rdf:resource="urn:uuid:e5943b0f-8c95-ef4c-a6f6-16b9ace48341"/>
+		<cim:Switch.retained>false</cim:Switch.retained>
+		<!--	ToDo: ratedCurrent and breakingCapacity values need to be updated  -->
+		<cim:Switch.ratedCurrent>2000</cim:Switch.ratedCurrent>
+		<cim:ProtectedSwitch.breakingCapacity>2000</cim:ProtectedSwitch.breakingCapacity>
+		<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4"/>
+		<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+		<cim:IdentifiedObject.description>Arendal 300 Kristiansand 1 A Breaker</cim:IdentifiedObject.description>
+	</cim:Breaker>
+	
+	<cim:SwitchPhase rdf:about="urn:uuid:c85a7eaa-5e23-4602-bc05-1f6ec6f814bd">
+		<cim:IdentifiedObject.name>A ARENDAL 300KR1 AB_S</cim:IdentifiedObject.name>
+		<cim:SwitchPhase.Switch rdf:resource="urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b"/>
+		<cim:SwitchPhase.normalOpen>false</cim:SwitchPhase.normalOpen>
+		<cim:SwitchPhase.phaseSide1 rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.A"/>
+		<cim:SwitchPhase.phaseSide2 rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.A"/>
+		<cim:IdentifiedObject.description>Phase A Arendal 300 Kristiansand 1 A Breaker</cim:IdentifiedObject.description>
+		<!--	SI Single-Phase Breaker in AssetCatalogue file  -->
+		<cim:PowerSystemResource.AssetDatasheet rdf:resource="urn:uuid:6e2752f2-d4f3-11e7-9296-cec278b6b50a"/>
+	</cim:SwitchPhase>
+	
+	<cim:SwitchPhase rdf:about="urn:uuid:132c5fdf-75bd-4b70-ab74-cd9867450f54">
+		<cim:IdentifiedObject.name>B ARENDAL 300KR1 AB_S</cim:IdentifiedObject.name>
+		<cim:SwitchPhase.Switch rdf:resource="urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b"/>
+		<cim:SwitchPhase.normalOpen>false</cim:SwitchPhase.normalOpen>
+		<cim:SwitchPhase.phaseSide1 rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.B"/>
+		<cim:SwitchPhase.phaseSide2 rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.B"/>
+		<cim:IdentifiedObject.description>Phase B Arendal 300 Kristiansand 1 A Breaker</cim:IdentifiedObject.description>
+		<!--	SI Single-Phase Breaker in AssetCatalogue file  -->
+		<cim:PowerSystemResource.AssetDatasheet rdf:resource="urn:uuid:6e2752f2-d4f3-11e7-9296-cec278b6b50a"/>
+	</cim:SwitchPhase>
+
+	<cim:SwitchPhase rdf:about="urn:uuid:9a675d44-b289-4968-90f5-d2df30a95284">
+		<cim:IdentifiedObject.name>C ARENDAL 300KR1 AB_S</cim:IdentifiedObject.name>
+		<cim:SwitchPhase.Switch rdf:resource="urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b"/>
+		<cim:SwitchPhase.normalOpen>false</cim:SwitchPhase.normalOpen>
+		<cim:SwitchPhase.phaseSide1 rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.C"/>
+		<cim:SwitchPhase.phaseSide2 rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.C"/>
+		<cim:IdentifiedObject.description>Phase C Arendal 300 Kristiansand 1 A Breaker</cim:IdentifiedObject.description>
+		<!--	SI Single-Phase Breaker in AssetCatalogue file  -->
+		<cim:PowerSystemResource.AssetDatasheet rdf:resource="urn:uuid:6e2752f2-d4f3-11e7-9296-cec278b6b50a"/>
+	</cim:SwitchPhase>
+	
+	<cim:OperatingShare rdf:about="urn:uuid:85e930e3-5409-4f2a-b343-5fd271d1a348">
+		<cim:OperatingShare.percentage>1</cim:OperatingShare.percentage>
+		<!--ARENDAL 300KR1 AB_S-->
+		<cim:OperatingShare.PowerSystemResource rdf:resource="urn:uuid:aef77d7f-3c07-4b17-892e-d28181107657"/>
+		<!--Operating Participant A-->
+		<cim:OperatingShare.OperatingParticipant rdf:resource="urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3"/>
+	</cim:OperatingShare>
+
+	<cim:Bay rdf:about="urn:uuid:e5943b0f-8c95-ef4c-a6f6-16b9ace48341">
+		<cim:IdentifiedObject.name>ARENDAL 300KR1</cim:IdentifiedObject.name>
+		<cim:Bay.VoltageLevel rdf:resource="urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.description>Arendal 300 Kristiansand 1 Bay</cim:IdentifiedObject.description>
+	</cim:Bay>
+	
+	<!--	The Bay information is also included in the Boundary Electrical Properties, The Boundary data rank higher than the content in this file -->
+	<cim:Bay rdf:about="urn:uuid:f72994d8-9857-b349-a4ae-2e3c9652d5bc">
+		<cim:IdentifiedObject.name>ARENDAL 300AS1</cim:IdentifiedObject.name>
+		<cim:Bay.VoltageLevel rdf:resource="urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.description>Arendal 300 Asker 1 Bay</cim:IdentifiedObject.description>
+	</cim:Bay>
+	
+	<!--	The VoltageLevel information is also included in the Boundary Electrical Properties, The Boundary data rank higher than the content in this file -->
+	<cim:VoltageLevel rdf:about="urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:VoltageLevel.BaseVoltage rdf:resource="urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4"/>
+		<cim:VoltageLevel.Substation rdf:resource="urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.name>ARENDAL 300</cim:IdentifiedObject.name>
+	</cim:VoltageLevel>
+	
+	<!--	The Substation information is also included in the Boundary Electrical Properties, The Boundary data rank higher than the content in this file -->
+	<cim:Substation rdf:about="urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:Substation.Region rdf:resource="urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.name>ARENDAL</cim:IdentifiedObject.name>
+	</cim:Substation>
+
+	<!--	ACLineSegment with multi phase -->
+	<cim:Line rdf:about="urn:uuid:a17e9cb8-98d2-5544-8595-7ec533e070a8">
+		<!--NO2 SGR located in the Common ElectricalProperties file-->
+		<cim:Line.Region rdf:resource="urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.name>LC 300KRISTIAN-ARENDAL</cim:IdentifiedObject.name>
+	</cim:Line>
+	
+	<cim:ACLineSegment rdf:about="urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f">
+		<cim:ACLineSegment.bch>0.0002222222</cim:ACLineSegment.bch>
+		<cim:ACLineSegment.r>1.8</cim:ACLineSegment.r>
+		<cim:ACLineSegment.x>19.8</cim:ACLineSegment.x>
+		<cim:Conductor.length>0</cim:Conductor.length>
+		<!--300kV located in the Common ElectricalProperties file-->
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4"/>
+		<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+		<cim:Equipment.normallyInService>true</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.description>Balance line representation 300 kV Kristiansand - Arendal</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>300KRISTIAN-ARENDAL</cim:IdentifiedObject.name>
+		<!--LC 300KRISTIAN-ARENDAL located in this file-->
+		<cim:Equipment.EquipmentContainer rdf:resource="urn:uuid:a17e9cb8-98d2-5544-8595-7ec533e070a8"/>
+	</cim:ACLineSegment>
+
+	
+	<cim:ACLineSegmentPhase rdf:about="urn:uuid:a0770620-0d29-44a9-94c4-bc68bcd7cbac">
+		<cim:ACLineSegmentPhase.sequenceNumber>1</cim:ACLineSegmentPhase.sequenceNumber>
+		<!--300KRISTIAN-ARENDAL located in this file-->
+		<cim:ACLineSegmentPhase.ACLineSegment rdf:resource="urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:ACLineSegmentPhase.phase rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.A"/>
+		<cim:IdentifiedObject.description>Phase A 300 kV Kristiansand - Arendal</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>A 300KRISTIAN-ARENDAL</cim:IdentifiedObject.name>
+		<!--	OHWI Overhead Wire in AssetCatalogue file  -->
+		<cim:PowerSystemResource.AssetDatasheet rdf:resource="urn:uuid:7f618ac4-d4da-11e7-9296-cec278b6b50a"/>
+	</cim:ACLineSegmentPhase>
+
+	<cim:ACLineSegmentPhase rdf:about="urn:uuid:f618213b-0233-4c16-b1ac-8b78820a433e">
+		<cim:ACLineSegmentPhase.sequenceNumber>2</cim:ACLineSegmentPhase.sequenceNumber>
+		<!--300KRISTIAN-ARENDAL located in this file-->
+		<cim:ACLineSegmentPhase.ACLineSegment rdf:resource="urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:ACLineSegmentPhase.phase rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.B"/>
+		<cim:IdentifiedObject.description>Phase B 300 kV Kristiansand - Arendal</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>B 300KRISTIAN-ARENDAL</cim:IdentifiedObject.name>
+		<!--	OHWI Overhead Wire in AssetCatalogue file  -->
+		<cim:PowerSystemResource.AssetDatasheet rdf:resource="urn:uuid:7f618ac4-d4da-11e7-9296-cec278b6b50a"/>
+	</cim:ACLineSegmentPhase>
+
+	<cim:ACLineSegmentPhase rdf:about="urn:uuid:dd3fef9f-298c-460e-98a6-c1876a18626a">
+		<cim:ACLineSegmentPhase.sequenceNumber>3</cim:ACLineSegmentPhase.sequenceNumber>
+		<!--300KRISTIAN-ARENDAL located in this file-->
+		<cim:ACLineSegmentPhase.ACLineSegment rdf:resource="urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:ACLineSegmentPhase.phase rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.C"/>
+		<cim:IdentifiedObject.description>Phase B 300 kV Kristiansand - Arendal</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>C 300KRISTIAN-ARENDAL</cim:IdentifiedObject.name>
+		<!--	OHWI Overhead Wire in AssetCatalogue file  -->
+		<cim:PowerSystemResource.AssetDatasheet rdf:resource="urn:uuid:7f618ac4-d4da-11e7-9296-cec278b6b50a"/>
+	</cim:ACLineSegmentPhase>
+
+	<cim:OperatingShare rdf:about="urn:uuid:9581c2ef-822a-497c-9368-b393e1d1519a">
+		<cim:OperatingShare.percentage>1</cim:OperatingShare.percentage>
+		<!--	300KRISTIAN-ARENDAL		-->
+		<cim:OperatingShare.PowerSystemResource rdf:resource="urn:uuid:aef77d7f-3c07-4b17-892e-d28181107657"/>
+		<!--Operating Participant A-->
+		<cim:OperatingShare.OperatingParticipant rdf:resource="urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3"/>
+	</cim:OperatingShare>
+	
+	<!--	Temperature dependent Operational Limit  -->
+	<cim:OperationalLimitSet rdf:about="urn:uuid:d7416808-1485-441f-8600-e5ff486c720c">
+		<cim:OperationalLimitSet.Equipment rdf:resource="urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.description>OperationalLimitSet 20 degree Celsius for 300KRISTIAN-ARENDAL</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.name>OLS 20dg 300KRISTIAN-ARENDAL</cim:IdentifiedObject.name>
+		<!--	20degreeCelsius located in the Common ElectricalProperties file	-->
+		<entsoe2:OperationalLimitSet.RateTemperature rdf:resource="urn:uuid:d04f954f-2038-4a52-bdcc-deffc4628f47"/>
+	</cim:OperationalLimitSet>
+
+	<cim:CurrentLimit rdf:about="urn:uuid:b1ae45df-bf3d-414e-9a31-aff6fc8ef198">
+		<cim:CurrentLimit.value>7320</cim:CurrentLimit.value>
+		<cim:OperationalLimit.OperationalLimitSet rdf:resource="urn:uuid:d7416808-1485-441f-8600-e5ff486c720c"/>
+		<!--	TATL located in the Common ElectricalProperties file  -->
+		<cim:OperationalLimit.OperationalLimitType rdf:resource="urn:uuid:f1769a40-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.name>CL_TATL_20degreeCelsius</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.description>CurrentLimit TATL 20 degree Celsius</cim:IdentifiedObject.description>
+	</cim:CurrentLimit>
+
+	<cim:CurrentLimit rdf:about="urn:uuid:066eee89-9710-4f41-b44b-336313117007">
+		<cim:CurrentLimit.value>3420</cim:CurrentLimit.value>
+		<cim:OperationalLimit.OperationalLimitSet rdf:resource="urn:uuid:d7416808-1485-441f-8600-e5ff486c720c"/>
+		<!--	PATL located in the Common ElectricalProperties file  -->
+		<cim:OperationalLimit.OperationalLimitType rdf:resource="urn:uuid:f1769a3e-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:IdentifiedObject.name>CL_PATL_20degreeCelsius</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.description>CurrentLimit PATL 20 degree Celsius</cim:IdentifiedObject.description>
+	</cim:CurrentLimit>
+	
+	
+</rdf:RDF>
