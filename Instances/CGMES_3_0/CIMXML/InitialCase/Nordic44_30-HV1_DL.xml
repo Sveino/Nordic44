@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:cim="http://iec.ch/TC57/CIM100#"
+	xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
+	xmlns:eu="http://iec.ch/TC57/CIM100-European#">
+	<md:FullModel rdf:about="urn:uuid:efcbcdd0-38cd-11e8-a5a3-74e5f963e18e">
+		<pti:Model.createdBy>Statnett SF</pti:Model.createdBy>
+		<md:Model.version>36</md:Model.version>
+		<md:Model.description>CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region</md:Model.description>
+		<md:Model.modelingAuthoritySet>http://www.Statnett.no/IGM/Nordic44_CGM</md:Model.modelingAuthoritySet>
+		<md:Model.profile>http://entsoe.eu/CIM/DiagramLayout/3/1</md:Model.profile>		<!-- Depending on EQ file -->
+		<md:Model.DependentOn rdf:resource="urn:uuid:2dd9014f-bdfb-11e5-94fa-c8f73332c8f4"/>
+	</md:FullModel>
+	<cim:Diagram rdf:ID="_fa38b92a-d616-11e5-9a54-c8f73334bf7e">
+		<cim:IdentifiedObject.name>Nordic Synchronous Area</cim:IdentifiedObject.name>
+		<cim:Diagram.orientation rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OrientationKind.negative"/>
+		<pti:Diagram.type>Worldview</pti:Diagram.type>
+	</cim:Diagram>
+	<cim:DiagramObject rdf:ID="_fa38b90d-d616-11e5-9a54-c8f73334bf7e">
+		<cim:IdentifiedObject.name>GraphicalComponent100</cim:IdentifiedObject.name>
+		<cim:DiagramObject.Diagram rdf:resource="#_fa38b92a-d616-11e5-9a54-c8f73334bf7e"/>
+		<cim:DiagramObject.IdentifiedObject rdf:resource="#_f1769670-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:DiagramObject.rotation>90</cim:DiagramObject.rotation>
+	</cim:DiagramObject>
+	<cim:DiagramObjectPoint rdf:ID="_efcbcdd1-38cd-11e8-a5a3-74e5f963e18e">
+		<cim:DiagramObjectPoint.DiagramObject rdf:resource="#_fa38b90d-d616-11e5-9a54-c8f73334bf7e"/>
+		<cim:DiagramObjectPoint.sequenceNumber>1</cim:DiagramObjectPoint.sequenceNumber>
+		<cim:DiagramObjectPoint.xPosition>269.24</cim:DiagramObjectPoint.xPosition>
+		<cim:DiagramObjectPoint.yPosition>1238.76</cim:DiagramObjectPoint.yPosition>
+	</cim:DiagramObjectPoint>
+</rdf:RDF>

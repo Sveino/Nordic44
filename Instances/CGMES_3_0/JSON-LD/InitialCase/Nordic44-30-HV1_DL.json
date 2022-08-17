@@ -1,0 +1,46 @@
+{
+    "@context": {
+        "cim": "http://iec.ch/TC57/CIM100#",
+        "nc": "http://entsoe.eu/ns/nc#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dct": "http://www.w3.org/ns/dcat#",
+        "prov": "http://www.w3.org/ns/prov#"
+    },
+    "@id": "urn:uuid:efcbcdd0-38cd-11e8-a5a3-74e5f963e18e",
+    "@type": "nc:DiagramLayoutModel",
+    "dcterms:title": "Nordic44-30-HV1_DL",
+    "@graph": [
+        {
+            "@id": "urn:uuid:fa38b92a-d616-11e5-9a54-c8f73334bf7e",
+            "@type": "cim:Diagram",
+            "cim:Diagram.orientation": {
+                "id": "http://iec.ch/TC57/2013/CIM-schema-cim16#OrientationKind.negative"
+            },
+            "cim:IdentifiedObject.name": "Nordic Synchronous Area",
+            "cim:Diagram.type": "Worldview"
+        },
+        {
+            "@id": "urn:uuid:fa38b90d-d616-11e5-9a54-c8f73334bf7e",
+            "@type": "cim:DiagramObject",
+            "cim:DiagramObject.Diagram": {
+                "id": "urn:uuid:fa38b92a-d616-11e5-9a54-c8f73334bf7e"
+            },
+            "cim:DiagramObject.IdentifiedObject": {
+                "id": "urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f"
+            },
+            "cim:DiagramObject.rotation": "90",
+            "cim:IdentifiedObject.name": "GraphicalComponent100"
+        },
+        {
+            "@id": "urn:uuid:efcbcdd1-38cd-11e8-a5a3-74e5f963e18e",
+            "@type": "cim:DiagramObjectPoint",
+            "cim:DiagramObjectPoint.DiagramObject": {
+                "id": "urn:uuid:fa38b90d-d616-11e5-9a54-c8f73334bf7e"
+            },
+            "cim:DiagramObjectPoint.sequenceNumber": "1",
+            "cim:DiagramObjectPoint.xPosition": "269.24",
+            "cim:DiagramObjectPoint.yPosition": "1238.76"
+        }
+    ]
+}
