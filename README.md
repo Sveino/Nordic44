@@ -1,6 +1,6 @@
 # Nordic44
 ## Introduction
-Synthetic Power System of the Nordic high voltage transmission System.
+The Nordic44 is a synthetic power system model of the Nordic high voltage transmission system described in [IEC](https://www.iec.ch/homepage) Common Information Model [(CIM)](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) .
 
 ## Purpose
 
@@ -16,7 +16,8 @@ are essential in the work flows used for dynamic security assessment of electric
 
 ## Related work
 
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+## License
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
