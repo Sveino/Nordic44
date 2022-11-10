@@ -1,14 +1,24 @@
 # Nordic44
 ## Introduction
-This is the repository for the Nordic44 that is a synthetic power system model of the Nordic high voltage transmission system described in [IEC](https://www.iec.ch/homepage) Common Information Model [(CIM)](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) .
+This is the repository for the Nordic44, that is a synthetic power system model of the Nordic high voltage transmission system, described in [IEC](https://www.iec.ch/homepage) Common Information Model [(CIM)](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) .
 
 ## Purpose
-The main objective of Nordic44 is to provide the necessary information to do market based simulation of the nordic electrical power grid. This include the support for:
-- Static Power flow 
-- is to develop a grid model "translator" capable of transforming the information (parameters & structure) and the physical behavior of the simulation models. This entails to transform each of a grid model’s sub-systems (e.g. generator, turbine, controller, etc.) from one endogenous representation, to many exogenous representations. This is achieved by using a “model transformation” (MT) tool developed in the project. The aim of using an MT solution is to save effort and to reduce errors by automating the building and modification of models where possible. An MT can be seen as a computer program that takes models as an input (source), and produces models as an output (target), by specifying the metamodel (model of a model) to which target or source models conform.
-
-
-
+The main objective of Nordic44 is to provide the necessary CIM model information to simulation business and application processes and information exchanges relevant for the Nordic electrical power grid. 
+Relevant business function that the model aim to support are:
+-	Network Operation (NO)
+-	Emergency Simulation (ES)
+-	Engineering Design Management (EDM)
+-	Fault Management (FM)
+-	Network Model Management (NMM)
+-	Predictive Operation Planning (POP)
+-	System Development Planning (SDP)
+Relevant application function that the model aim to support are:
+-	Static Power Flow (SPF)
+-	Remedial Action and Contingency Analysis (RACA)
+-	Short-Circuit Analysis (SCA)
+-	Capacity Calculation Analysis (CCA)
+-	Transient Dynamic Stability Analysis (TDSA)
+-	Market information and transparency
 
 ## Content
 
