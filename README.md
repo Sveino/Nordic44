@@ -3,7 +3,8 @@
 This is the repository for the Nordic44, that is a synthetic power system model of the Nordic high voltage transmission system, described in [IEC](https://www.iec.ch/homepage) Common Information Model [(CIM)](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) .
 
 ## Purpose
-The main objective of Nordic44 is to provide the necessary CIM model information to simulation business and application processes and information exchanges relevant for the Nordic electrical power grid. 
+The main objective of Nordic44 is to provide the necessary CIM model information to simulation business and application processes and information exchanges relevant for the Nordic electrical power grid.
+
 Relevant business function that the model aim to support are:
 -	Network Operation (NO)
 -	Emergency Simulation (ES)
@@ -12,6 +13,7 @@ Relevant business function that the model aim to support are:
 -	Network Model Management (NMM)
 -	Predictive Operation Planning (POP)
 -	System Development Planning (SDP)
+
 Relevant application function that the model aim to support are:
 -	Static Power Flow (SPF)
 -	Remedial Action and Contingency Analysis (RACA)
