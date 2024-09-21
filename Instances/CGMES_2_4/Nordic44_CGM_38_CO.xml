@@ -5,16 +5,13 @@
 	xmlns:nc="http://entsoe.eu/ns/nc/#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:cim="http://iec.ch/TC57/CIM100#" 
-	<!-- Header namespace -->
 	xmlns:dcterms="http://purl.org/dc/terms/#"
 	xmlns:dcat="http://www.w3.org/ns/dcat#"
 	xmlns:time="http://www.w3.org/2006/time#"
 	xmlns:prov="http://www.w3.org/ns/prov#"
-<!-- These should not be included 
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:eumd="http://entsoe.eu/ns/Metadata-European#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	-->
 	> 
 
 <!-- 

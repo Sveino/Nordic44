@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cim: <http://iec.ch/TC57/CIM100#> .
+@prefix dcterms: <http://purl.org/dc/terms/#> .
+@prefix md: <http://iec.ch/TC57/61970-552/ModelDescription/1#> .
+@prefix nc: <http://entsoe.eu/ns/nc/#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<#_0c19a9a2-1165-49f9-bc0a-2f6b88deec9f> a nc:OrdinaryContingency ;
+  cim:Contingency.mustStudy "true" ;
+  cim:IdentifiedObject.description "Tripping of 300KRISTIAN-ARENDAL" ;
+  cim:IdentifiedObject.mRID "0c19a9a2-1165-49f9-bc0a-2f6b88deec9f" ;
+  cim:IdentifiedObject.name "OC 300KRISTIAN-ARENDAL" ;
+  nc:Contingency.ContingencyOwner <http://data.europa.eu/energy/EIC/10X1001A1001A38Y> ;
+  nc:Contingency.probability "100" .
+
+<#_8ffcf7ab-2c5f-40eb-9e56-6338bdd8c96d> a cim:ContingencyEquipment ;
+  cim:ContingencyElement.Contingency <#_0c19a9a2-1165-49f9-bc0a-2f6b88deec9f> ;
+  cim:ContingencyEquipment.Equipment <#__f1769cd4-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:ContingencyEquipment.contingentStatus cim:ContingencyEquipmentStatusKind.outOfService ;
+  cim:IdentifiedObject.description "Tripping of 300KRISTIAN-ARENDAL" ;
+  cim:IdentifiedObject.mRID "8ffcf7ab-2c5f-40eb-9e56-6338bdd8c96d" ;
+  cim:IdentifiedObject.name "CE 300KRISTIAN-ARENDAL" .
+
+<urn:uuid:84552e03-0040-43d5-aff2-0f77f01668cb> a md:FullModel ;
+  dcterms:conformsTo "http://entsoe.eu/ns/CIM/Contingency-EU/2.0" ;
+  dcterms:description "CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+  dcterms:identifier "urn:uuid:84552e03-0040-43d5-aff2-0f77f01668cb" ;
+  prov:atLocation <http://data.europa.eu/energy/EIC/10X1001A1001A38Y> ;
+  prov:generatedAtTime "2022-01-28T12:01:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+  time:hasXSDDuration "P1D" ;
+  time:inXSDDateTimeStamp "2021-10-31T23:00:00Z" .
+
+

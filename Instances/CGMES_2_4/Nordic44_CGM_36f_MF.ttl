@@ -1,0 +1,397 @@
+@prefix fw:  <http://entsoe.eu/CIM/Framework/1/0#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<urn:uuid:835152ff-c1f0-474a-bd0a-ab029af4df9b>
+        rdf:type  fw:Manifest ;
+        fw:FrameworkIdentifiedObject.description
+                "Nordic44 Test Manifest Version 2" ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44 Test Manifest Version 2" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Manifest.ManifestSpecification
+                <urn:uuid:d6fdac5d-5e04-4c3d-b182-be1b89266cf8> .
+
+<urn:uuid:57d908e2-7de2-40a8-a5f3-2a8589ddca62>
+        rdf:type                      fw:SituationOperation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "PowerFlow_Nordic44_CGM_v3_6" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:SituationOperation.OutputModel
+                <urn:uuid:47eb7c36-d0f6-11e7-9f7b-b46d83638f70> ;
+        fw:SituationOperation.Situation
+                <urn:uuid:ad5a5066-8039-4e50-9dbc-55285f1f8705> ;
+        fw:SituationOperation.SituationOperationSpecification
+                <urn:uuid:5b2c57c6-c531-4163-9a97-10f32fd1fbc4> ;
+        fw:SituationOperation.result  fw:SituationOperationResultKind.ok .
+
+<urn:uuid:a846e071-94c2-4e60-b143-83f55a8e5d67>
+        rdf:type                     fw:FullModel ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_CGM_v3_6" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-10T13:47:55.000Z" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Model.ModelSpecification  <urn:uuid:aaf2b60e-4673-4d00-b8c6-b59574db0120> ;
+        fw:Model.profile             "http://entsoe.eu/CIM/EquipmentOperation/3/2" , "http://entsoe.eu/CIM/GeographicalLocation/2/1" , "http://entsoe.eu/CIM/EquipmentOperation/3/1" , "http://entsoe.eu/CIM/EquipmentCore/3/1" , "http://entsoe.eu/CIM/EquipmentCore/3/2" , "http://entsoe.eu/CIM/StateVariables/4/1" , "http://entsoe.eu/CIM/DiagramLayout/3/1" , "http://entsoe.eu/CIM/Topology/4/1" , "http://entsoe.eu/CIM/SteadyStateHypothesis/1/2" , "http://entsoe.eu/CIM/SteadyStateHypothesis/1/1" ;
+        fw:Model.validFrom           "2015-03-06T01:30:00.0000000Z" .
+
+<urn:uuid:1d8b61bc-c7f3-4e9e-a3bd-f4ec24beb586>
+        rdf:type                     fw:FullModel ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_v3_6_SSH" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-10T13:47:55" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Model.ModelSpecification  <urn:uuid:9f3bf697-23fd-4c97-a937-0d4ea99da212> ;
+        fw:Model.profile             "http://entsoe.eu/CIM/SteadyStateHypothesis/1/2" , "http://entsoe.eu/CIM/SteadyStateHypothesis/1/1" ;
+        fw:Model.validFrom           "2015-03-06T01:30:00.0000000Z" .
+
+<urn:uuid:4e3ce936-df46-4e9d-afbd-4bf9910c0e31>
+        rdf:type                      fw:SituationOperation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "TopologyProcessing_Nordic44_CGM_v3_6" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:SituationOperation.OutputModel
+                <urn:uuid:b3ca40e2-1210-4d95-b475-24d474ecf4d8> ;
+        fw:SituationOperation.Situation
+                <urn:uuid:ad5a5066-8039-4e50-9dbc-55285f1f8705> ;
+        fw:SituationOperation.SituationOperationSpecification
+                <urn:uuid:d0f6201d-73b9-41e1-8aad-e4c1ac6a8a9f> ;
+        fw:SituationOperation.result  fw:SituationOperationResultKind.ok .
+
+<urn:uuid:6babc7ed-7a4d-4f5f-a88e-955abff45c1a>
+        rdf:type                        fw:FullModelSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "The GL CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_GL" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:ModelSpecification.DependentOn
+                <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> ;
+        fw:ModelSpecification.ontology  "http://entsoe.eu/CIM/CGMES/2/5#" ;
+        fw:ModelSpecification.type      "OperationPlanningNodeBreakerHybrid" .
+
+<urn:uuid:23b29cab-de3d-41f8-aa22-5799e55c2106>
+        rdf:type                        fw:FullModelSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "The DL CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_DL" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:ModelSpecification.DependentOn
+                <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> ;
+        fw:ModelSpecification.ontology  "http://entsoe.eu/CIM/CGMES/2/5#" ;
+        fw:ModelSpecification.type      "OperationPlanningNodeBreakerHybrid" .
+
+<urn:uuid:2dd9014f-bdfb-11e5-94fa-c8f73332c8f4>
+        rdf:type                     fw:FullModel ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_v3_6_EQ" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-10T13:47:55" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Model.ModelSpecification  <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> ;
+        fw:Model.profile             "http://entsoe.eu/CIM/EquipmentCore/3/2" , "http://entsoe.eu/CIM/EquipmentCore/3/1" , "http://entsoe.eu/CIM/EquipmentOperation/3/1" , "http://entsoe.eu/CIM/EquipmentOperation/3/2" ;
+        fw:Model.validFrom           "2015-03-06T01:30:00.0000000Z" .
+
+<urn:uuid:ca843888-3b92-45ea-8cb9-7cc4999fdfd4>
+        rdf:type  fw:AssembleOperation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Assemble_Nordic44_CGM_Full" ;
+        fw:SituationOperationSpecification.OutputModelSpecification
+                <urn:uuid:aaf2b60e-4673-4d00-b8c6-b59574db0120> ;
+        fw:SituationOperationSpecification.SituationSpecification
+                <urn:uuid:3c8a3cc0-682e-441f-af9d-e8e51e0f662f> .
+
+<urn:uuid:fba05f4d-eda1-4c70-a042-d03acfba2eb3>
+        rdf:type                     fw:FullModel ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_v3_3_GL" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-10T13:47:55" ;
+        fw:FrameworkVersionObject.version
+                "33" ;
+        fw:Model.ModelSpecification  <urn:uuid:6babc7ed-7a4d-4f5f-a88e-955abff45c1a> ;
+        fw:Model.profile             "http://entsoe.eu/CIM/GeographicalLocation/2/1" ;
+        fw:Model.validFrom           "2015-03-06T01:30:00.0000000Z" .
+
+<urn:uuid:5b2c57c6-c531-4163-9a97-10f32fd1fbc4>
+        rdf:type  fw:PowerFlowOperation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "PF_Nordic44_CGM" ;
+        fw:PowerFlowOperation.algorithmKind
+                fw:PowerFlowAlgorithmKind.fullNewtonRaphson ;
+        fw:PowerFlowOperation.eneableInterchangeControl
+                "true" ;
+        fw:PowerFlowOperation.flatStart
+                "true" ;
+        fw:PowerFlowOperation.pTolerance
+                "0.01" ;
+        fw:PowerFlowOperation.qTolerance
+                "0" ;
+        fw:PowerFlowOperation.respectQlimits
+                "false" ;
+        fw:PowerFlowOperation.slackDistributionKind
+                fw:slackDistributionKind.loadDistribution ;
+        fw:PowerFlowOperation.staticVarCompensatorControlPriority
+                "0" ;
+        fw:PowerFlowOperation.switchShuntControlPriority
+                "0" ;
+        fw:PowerFlowOperation.transformerTapControlPriority
+                "0" ;
+        fw:PowerFlowOperation.voltageLimitAngle
+                "0" ;
+        fw:SituationOperationSpecification.OutputModelSpecification
+                <urn:uuid:c14afecb-e612-4549-a639-f44fbbb40740> ;
+        fw:SituationOperationSpecification.SituationSpecification
+                <urn:uuid:ef4bdc3f-19d0-4dd3-9549-5bda677a7990> .
+
+<urn:uuid:d6fdac5d-5e04-4c3d-b182-be1b89266cf8>
+        rdf:type  fw:ManifestSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "Nordic44 Test Manifest Specification" ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "MFS Nordic44 Test" .
+
+<urn:uuid:b3ca40e2-1210-4d95-b475-24d474ecf4d8>
+        rdf:type                     fw:FullModel ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_v3_6_TP" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-10T13:47:55" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Model.ModelSpecification  <urn:uuid:0a84c612-17cc-4a1c-9653-45bb0dad73e8> ;
+        fw:Model.profile             "http://entsoe.eu/CIM/Topology/4/1" ;
+        fw:Model.validFrom           "2015-03-06T01:30:00.0000000Z" .
+
+<urn:uuid:47eb7c36-d0f6-11e7-9f7b-b46d83638f70>
+        rdf:type                     fw:FullModel ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_v3_6_SV" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-10T13:47:55" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Model.ModelSpecification  <urn:uuid:c14afecb-e612-4549-a639-f44fbbb40740> ;
+        fw:Model.profile             "http://entsoe.eu/CIM/StateVariables/4/1" ;
+        fw:Model.validFrom           "2015-03-06T01:30:00.0000000Z" .
+
+<urn:uuid:ef4bdc3f-19d0-4dd3-9549-5bda677a7990>
+        rdf:type  fw:SituationSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "Situation Specification for merging Nordic44_CGM Input Only." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "SS_Nordic44_CGM" ;
+        fw:SituationSpecification.InputModelSpecification
+                <urn:uuid:23b29cab-de3d-41f8-aa22-5799e55c2106> , <urn:uuid:6babc7ed-7a4d-4f5f-a88e-955abff45c1a> , <urn:uuid:9f3bf697-23fd-4c97-a937-0d4ea99da212> , <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> .
+
+<urn:uuid:bca6655f-07e2-4155-b999-f1bfb3369997>
+        rdf:type                     fw:FullModel ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_v3_6_DL" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-10T13:47:55" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Model.ModelSpecification  <urn:uuid:23b29cab-de3d-41f8-aa22-5799e55c2106> ;
+        fw:Model.profile             "http://entsoe.eu/CIM/DiagramLayout/3/1" ;
+        fw:Model.validFrom           "2015-03-06T01:30:00.0000000Z" .
+
+<urn:uuid:2beb795e-e15e-4ea3-aba8-c4c2de4a153d>
+        rdf:type                      fw:SituationOperation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "SO_Nordic44_CGM_v3_6" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:SituationOperation.OutputModel
+                <urn:uuid:a846e071-94c2-4e60-b143-83f55a8e5d67> ;
+        fw:SituationOperation.Situation
+                <urn:uuid:c098f015-7b31-41d4-92b9-c65ecb93f652> ;
+        fw:SituationOperation.SituationOperationSpecification
+                <urn:uuid:ca843888-3b92-45ea-8cb9-7cc4999fdfd4> ;
+        fw:SituationOperation.result  fw:SituationOperationResultKind.ok .
+
+<urn:uuid:0a84c612-17cc-4a1c-9653-45bb0dad73e8>
+        rdf:type                        fw:FullModelSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "The TP CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_TP" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:ModelSpecification.DependentOn
+                <urn:uuid:9f3bf697-23fd-4c97-a937-0d4ea99da212> , <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> ;
+        fw:ModelSpecification.ontology  "http://entsoe.eu/CIM/CGMES/2/5#" ;
+        fw:ModelSpecification.type      "OperationPlanningNodeBreakerHybrid" .
+
+<urn:uuid:c098f015-7b31-41d4-92b9-c65ecb93f652>
+        rdf:type                 fw:Situation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "S_Nordic44_CGM_v3_6" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Situation.InputModel  <urn:uuid:fba05f4d-eda1-4c70-a042-d03acfba2eb3> , <urn:uuid:b3ca40e2-1210-4d95-b475-24d474ecf4d8> , <urn:uuid:2dd9014f-bdfb-11e5-94fa-c8f73332c8f4> , <urn:uuid:9f3bf697-23fd-4c97-a937-0d4ea99da212> , <urn:uuid:bca6655f-07e2-4155-b999-f1bfb3369997> , <urn:uuid:47eb7c36-d0f6-11e7-9f7b-b46d83638f70> ;
+        fw:Situation.SituationSpecification
+                <urn:uuid:3c8a3cc0-682e-441f-af9d-e8e51e0f662f> ;
+        fw:Situation.type        "MergeCase" ;
+        fw:Situation.validOn     "2015-03-06T01:30:00.000Z" .
+
+<urn:uuid:aaf2b60e-4673-4d00-b8c6-b59574db0120>
+        rdf:type                        fw:FullModelSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_CGM" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:ModelSpecification.ontology  "http://entsoe.eu/CIM/CGMES/2/5#" ;
+        fw:ModelSpecification.type      "OperationPlanningNodeBreakerHybrid" .
+
+<urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1>
+        rdf:type                        fw:FullModelSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "The EQ CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_EQ" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:ModelSpecification.ontology  "http://entsoe.eu/CIM/CGMES/2/5#" ;
+        fw:ModelSpecification.type      "OperationPlanningNodeBreakerHybrid" .
+
+<urn:uuid:9f3bf697-23fd-4c97-a937-0d4ea99da212>
+        rdf:type                        fw:FullModelSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "The SSH CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_SSH" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:ModelSpecification.DependentOn
+                <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> ;
+        fw:ModelSpecification.ontology  "http://entsoe.eu/CIM/CGMES/2/5#" ;
+        fw:ModelSpecification.type      "OperationPlanningNodeBreakerHybrid" .
+
+<urn:uuid:c14afecb-e612-4549-a639-f44fbbb40740>
+        rdf:type                        fw:FullModelSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "The SV CGM Test model developed by Statnett SF. Nordic 44 bus system for the Nordic region." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Nordic44_SV" ;
+        fw:FrameworkVersionObject.created
+                "2018-05-09T16:11:55.1404051Z" ;
+        fw:ModelSpecification.DependentOn
+                <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> , <urn:uuid:0a84c612-17cc-4a1c-9653-45bb0dad73e8> , <urn:uuid:9f3bf697-23fd-4c97-a937-0d4ea99da212> ;
+        fw:ModelSpecification.ontology  "http://entsoe.eu/CIM/CGMES/2/5#" ;
+        fw:ModelSpecification.type      "OperationPlanningNodeBreakerHybrid" .
+
+<urn:uuid:d0f6201d-73b9-41e1-8aad-e4c1ac6a8a9f>
+        rdf:type                    fw:TopologyProcessing ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "TP_Nordic44_CGM" ;
+        fw:SituationOperationSpecification.OutputModelSpecification
+                <urn:uuid:0a84c612-17cc-4a1c-9653-45bb0dad73e8> ;
+        fw:SituationOperationSpecification.SituationSpecification
+                <urn:uuid:ef4bdc3f-19d0-4dd3-9549-5bda677a7990> ;
+        fw:TopologyProcessing.enableMultiSectionLines
+                "false" ;
+        fw:TopologyProcessing.interchangeArea
+                fw:InterchangeAreaKind.energyCongestionZone ;
+        fw:TopologyProcessing.kind  fw:TopologyOperationKind.switchOpen .
+
+<urn:uuid:808b82c0-bcd9-4046-8956-c57691f1946d>
+        rdf:type  fw:AssembleOperation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Assemble_Nordic44_CGM" ;
+        fw:SituationOperationSpecification.SituationSpecification
+                <urn:uuid:ef4bdc3f-19d0-4dd3-9549-5bda677a7990> .
+
+<urn:uuid:3c8a3cc0-682e-441f-af9d-e8e51e0f662f>
+        rdf:type  fw:SituationSpecification ;
+        fw:FrameworkIdentifiedObject.description
+                "Situation Specification for merging Nordic44_CGM Input and output." ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "SS_Nordic44_CGM_Full" ;
+        fw:SituationSpecification.InputModelSpecification
+                <urn:uuid:0a84c612-17cc-4a1c-9653-45bb0dad73e8> , <urn:uuid:23b29cab-de3d-41f8-aa22-5799e55c2106> , <urn:uuid:6babc7ed-7a4d-4f5f-a88e-955abff45c1a> , <urn:uuid:6bff3489-cdd2-478b-aa57-652b314dd6c1> , <urn:uuid:c14afecb-e612-4549-a639-f44fbbb40740> , <urn:uuid:9f3bf697-23fd-4c97-a937-0d4ea99da212> .
+
+<urn:uuid:ad5a5066-8039-4e50-9dbc-55285f1f8705>
+        rdf:type                      fw:SituationOperation , fw:Situation ;
+        fw:FrameworkIdentifiedObject.modelAuthority
+                "http://www.Statnett.no/IGM/Nordic44_CGM" ;
+        fw:FrameworkIdentifiedObject.name
+                "Assemble_Nordic44_CGM_v3_6" , "S_Nordic44_CGM_v3_6" ;
+        fw:FrameworkVersionObject.version
+                "36" ;
+        fw:Situation.InputModel       <urn:uuid:fba05f4d-eda1-4c70-a042-d03acfba2eb3> , <urn:uuid:bca6655f-07e2-4155-b999-f1bfb3369997> , <urn:uuid:1d8b61bc-c7f3-4e9e-a3bd-f4ec24beb586> , <urn:uuid:2dd9014f-bdfb-11e5-94fa-c8f73332c8f4> ;
+        fw:Situation.SituationSpecification
+                <urn:uuid:ef4bdc3f-19d0-4dd3-9549-5bda677a7990> ;
+        fw:Situation.type             "BaseCase" ;
+        fw:Situation.validOn          "2015-03-06T01:30:00.000Z" ;
+        fw:SituationOperation.Situation
+                <urn:uuid:ad5a5066-8039-4e50-9dbc-55285f1f8705> ;
+        fw:SituationOperation.SituationOperationSpecification
+                <urn:uuid:808b82c0-bcd9-4046-8956-c57691f1946d> ;
+        fw:SituationOperation.result  fw:SituationOperationResultKind.ok .
