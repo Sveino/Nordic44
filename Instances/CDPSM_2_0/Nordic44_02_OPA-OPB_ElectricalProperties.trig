@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cim: <http://iec.ch/TC57/CIM/CIM100#> .
+@prefix entsoe2: <http://entsoe.eu/CIM/SchemaExtension/3/2#> .
+@prefix md: <http://iec.ch/TC57/61970-552/ModelDescription/1#> .
+
+<urn:uuid:d6cde6dd-1fe0-4e6a-8a85-d5eb08e36bed> { # model graph
+
+<urn:uuid:d6cde6dd-1fe0-4e6a-8a85-d5eb08e36bed> a md:FullModel ;
+  md:Model.DependentOn <urn:uuid:34b4ffa4-1957-48c1-b60a-7040373bdcb6> ;
+  md:Model.created "2018-03-22T10:43:00Z" ;
+  md:Model.description "CGM Test model Common ElectricalProperties" ;
+  md:Model.modelingAuthoritySet "http://www.Statnett.no/Asset/Nordic44" ;
+  md:Model.profile "http://iec.ch/TC57/61968-13/ElectricalProperties/2/0" ;
+  md:Model.scenarioTime "2018-03-22T00:00:00Z" ;
+  md:Model.version "01" .
+
+<urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f> a cim:Substation ;
+  cim:IdentifiedObject.name "ARENDAL" ;
+  cim:Substation.Region <urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f> .
+
+<urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f> a cim:VoltageLevel ;
+  cim:IdentifiedObject.name "ARENDAL 300" ;
+  cim:VoltageLevel.BaseVoltage <urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4> ;
+  cim:VoltageLevel.Substation <urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f> .
+
+<urn:uuid:f72994d8-9857-b349-a4ae-2e3c9652d5bc> a cim:Bay ;
+  cim:Bay.VoltageLevel <urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:IdentifiedObject.description "Arendal 300 Asker 1 Bay" ;
+  cim:IdentifiedObject.name "ARENDAL 300AS1" .
+
+
+}

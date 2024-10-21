@@ -1,0 +1,143 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cim: <http://iec.ch/TC57/CIM/CIM100#> .
+@prefix entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#> .
+@prefix entsoe2: <http://entsoe.eu/CIM/SchemaExtension/3/2#> .
+@prefix md: <http://iec.ch/TC57/61970-552/ModelDescription/1#> .
+
+<urn:uuid:34b4ffa4-1957-48c1-b60a-7040373bdcb6> { # model graph
+
+<urn:uuid:18e06751-54c1-44c8-86d9-0e9f5f358289> a cim:OperatingParticipant ;
+  cim:IdentifiedObject.name "Operating Participant B" .
+
+<urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4> a cim:BaseVoltage ;
+  cim:BaseVoltage.nominalVoltage "300" ;
+  cim:IdentifiedObject.name "300kV" .
+
+<urn:uuid:2dd9048c-bdfb-11e5-94fa-c8f73332c8f4> a cim:GeographicalRegion ;
+  cim:IdentifiedObject.description "Nordic" ;
+  cim:IdentifiedObject.name "NO" .
+
+<urn:uuid:34b4ffa4-1957-48c1-b60a-7040373bdcb6> a md:FullModel ;
+  md:Model.created "2018-03-22T10:43:00Z" ;
+  md:Model.description "CGM Test model Common ElectricalProperties" ;
+  md:Model.modelingAuthoritySet "http://www.Statnett.no/Asset/Nordic44" ;
+  md:Model.profile "http://iec.ch/TC57/CIM/ElectricalProperties/2/0" ;
+  md:Model.scenarioTime "2018-03-22T00:00:00Z" ;
+  md:Model.version "03" .
+
+<urn:uuid:3cab7cb8-5f26-452c-b6eb-fb54ca63793f> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "Negative 10 degree Celsius" ;
+  cim:IdentifiedObject.name "-10degreeCelsius" ;
+  entsoe2:RateTemperature.value "-10" .
+
+<urn:uuid:4b214f8c-037f-4efc-a901-b566b1988519> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "Negative 20 degree Celsius" ;
+  cim:IdentifiedObject.name "-20degreeCelsius" ;
+  entsoe2:RateTemperature.value "-20" .
+
+<urn:uuid:5d6e4928-9f65-4c17-ba3c-2454a9ace96c> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "5 degree Celsius" ;
+  cim:IdentifiedObject.name "5degreeCelsius" ;
+  entsoe2:RateTemperature.value "5" .
+
+<urn:uuid:92e7d859-88ee-49ed-8a3e-9a7a1464c196> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "15 degree Celsius" ;
+  cim:IdentifiedObject.name "15degreeCelsius" ;
+  entsoe2:RateTemperature.value "15" .
+
+<urn:uuid:961b67cd-7db5-441b-9efe-03f980c55c93> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "30 degree Celsius" ;
+  cim:IdentifiedObject.name "30degreeCelsius" ;
+  entsoe2:RateTemperature.value "30" .
+
+<urn:uuid:a12ab190-ab83-4e02-b750-78baf859d311> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "25 degree Celsius" ;
+  cim:IdentifiedObject.name "25degreeCelsius" ;
+  entsoe2:RateTemperature.value "25" .
+
+<urn:uuid:a63ce14e-fba0-4f9e-8b59-7ef2fe887ff8> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "Negative 5 degree Celsius" ;
+  cim:IdentifiedObject.name "-5degreeCelsius" ;
+  entsoe2:RateTemperature.value "-5" .
+
+<urn:uuid:d04f954f-2038-4a52-bdcc-deffc4628f47> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "20 degree Celsius" ;
+  cim:IdentifiedObject.name "20degreeCelsius" ;
+  entsoe2:RateTemperature.value "20" .
+
+<urn:uuid:d3d8289b-4372-4857-ab28-52a691a7026e> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "10 degree Celsius" ;
+  cim:IdentifiedObject.name "10degreeCelsius" ;
+  entsoe2:RateTemperature.value "10" .
+
+<urn:uuid:dbd4cffd-c36f-4007-aa15-f176a216aecc> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "Negative 25 degree Celsius" ;
+  cim:IdentifiedObject.name "-25degreeCelsius" ;
+  entsoe2:RateTemperature.value "-25" .
+
+<urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3> a cim:OperatingParticipant ;
+  cim:IdentifiedObject.name "Operating Participant A" .
+
+<urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f> a cim:SubGeographicalRegion ;
+  cim:IdentifiedObject.name "NO2 SGR" ;
+  cim:SubGeographicalRegion.Region <urn:uuid:2dd9048c-bdfb-11e5-94fa-c8f73332c8f4> .
+
+<urn:uuid:f1769a3e-9aeb-11e5-91da-b8763fd99c5f> a cim:OperationalLimitType ;
+  cim:IdentifiedObject.name "PATL" ;
+  cim:OperationalLimitType.acceptableDuration "0" ;
+  cim:OperationalLimitType.direction <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue> ;
+  entsoe:OperationalLimitType.limitType entsoe:LimitTypeKind.patl .
+
+<urn:uuid:f1769a3f-9aeb-11e5-91da-b8763fd99c5f> a cim:OperationalLimitType ;
+  cim:IdentifiedObject.name "TATL" ;
+  cim:OperationalLimitType.acceptableDuration "7200" ;
+  cim:OperationalLimitType.direction <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue> ;
+  entsoe:OperationalLimitType.limitType entsoe:LimitTypeKind.tatl .
+
+<urn:uuid:f1769a40-9aeb-11e5-91da-b8763fd99c5f> a cim:OperationalLimitType ;
+  cim:IdentifiedObject.name "TATL" ;
+  cim:OperationalLimitType.acceptableDuration "900" ;
+  cim:OperationalLimitType.direction <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue> ;
+  entsoe:OperationalLimitType.limitType entsoe:LimitTypeKind.tatl .
+
+<urn:uuid:f1769a41-9aeb-11e5-91da-b8763fd99c5f> a cim:OperationalLimitType ;
+  cim:IdentifiedObject.name "HighVoltage" ;
+  cim:OperationalLimitType.acceptableDuration "900" ;
+  cim:OperationalLimitType.direction <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.high> ;
+  entsoe:OperationalLimitType.limitType entsoe:LimitTypeKind.highVoltage .
+
+<urn:uuid:f1769a42-9aeb-11e5-91da-b8763fd99c5f> a cim:OperationalLimitType ;
+  cim:IdentifiedObject.name "HighVoltage" ;
+  cim:OperationalLimitType.acceptableDuration "0" ;
+  cim:OperationalLimitType.direction <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.high> ;
+  entsoe:OperationalLimitType.limitType entsoe:LimitTypeKind.highVoltage .
+
+<urn:uuid:f1769a43-9aeb-11e5-91da-b8763fd99c5f> a cim:OperationalLimitType ;
+  cim:IdentifiedObject.name "LowVoltage" ;
+  cim:OperationalLimitType.acceptableDuration "900" ;
+  cim:OperationalLimitType.direction <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.low> ;
+  entsoe:OperationalLimitType.limitType entsoe:LimitTypeKind.lowVoltage .
+
+<urn:uuid:f1769a44-9aeb-11e5-91da-b8763fd99c5f> a cim:OperationalLimitType ;
+  cim:IdentifiedObject.name "LowVoltage" ;
+  cim:OperationalLimitType.acceptableDuration "0" ;
+  cim:OperationalLimitType.direction <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.low> ;
+  entsoe:OperationalLimitType.limitType entsoe:LimitTypeKind.lowVoltage .
+
+<urn:uuid:fa0028bd-3ba9-44fb-821d-a8039b6eca3c> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "Negative 15 degree Celsius" ;
+  cim:IdentifiedObject.name "-15degreeCelsius" ;
+  entsoe2:RateTemperature.value "-15" .
+
+<urn:uuid:fbe246d3-728f-49c9-a5da-6745a319422c> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "Negative 30 degree Celsius" ;
+  cim:IdentifiedObject.name "-30degreeCelsius" ;
+  entsoe2:RateTemperature.value "-30" .
+
+<urn:uuid:ff7357d9-e554-4431-afb5-7cc70eff9d45> a entsoe2:RateTemperature ;
+  cim:IdentifiedObject.description "0 degree Celsius" ;
+  cim:IdentifiedObject.name "0degreeCelsius" ;
+  entsoe2:RateTemperature.value "0" .
+
+
+}

@@ -1,0 +1,7 @@
+@prefix geojson: <https://purl.org/geojson/vocab#>.
+@prefix cim: <http://iec.ch/TC57/CIM100#>.
+@prefix nc: <http://entsoe.eu/ns/nc#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dct: <http://www.w3.org/ns/dcat#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.

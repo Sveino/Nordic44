@@ -1,0 +1,149 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cim: <http://iec.ch/TC57/CIM/CIM100#> .
+@prefix entsoe2: <http://entsoe.eu/CIM/SchemaExtension/3/2#> .
+@prefix md: <http://iec.ch/TC57/61970-552/ModelDescription/1#> .
+
+<urn:uuid:1cbcbc2c-1cf1-48f0-b3fd-2c28444c21ba> { # model graph
+
+<urn:uuid:066eee89-9710-4f41-b44b-336313117007> a cim:CurrentLimit ;
+  cim:CurrentLimit.value "3420" ;
+  cim:IdentifiedObject.description "CurrentLimit PATL 20 degree Celsius" ;
+  cim:IdentifiedObject.name "CL_PATL_20degreeCelsius" ;
+  cim:OperationalLimit.OperationalLimitSet <urn:uuid:d7416808-1485-441f-8600-e5ff486c720c> ;
+  cim:OperationalLimit.OperationalLimitType <urn:uuid:f1769a3e-9aeb-11e5-91da-b8763fd99c5f> .
+
+<urn:uuid:132c5fdf-75bd-4b70-ab74-cd9867450f54> a cim:SwitchPhase ;
+  cim:IdentifiedObject.description "Phase B Arendal 300 Kristiansand 1 A Breaker" ;
+  cim:IdentifiedObject.name "B ARENDAL 300KR1 AB_S" ;
+  cim:PowerSystemResource.AssetDatasheet <urn:uuid:6e2752f2-d4f3-11e7-9296-cec278b6b50a> ;
+  cim:SwitchPhase.Switch <urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b> ;
+  cim:SwitchPhase.normalOpen "false" ;
+  cim:SwitchPhase.phaseSide1 <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.B> ;
+  cim:SwitchPhase.phaseSide2 <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.B> .
+
+<urn:uuid:18e06751-54c1-44c8-86d9-0e9f5f358289> a cim:OperatingParticipant ;
+  cim:IdentifiedObject.name "Operating Participant B" .
+
+<urn:uuid:1cbcbc2c-1cf1-48f0-b3fd-2c28444c21ba> a md:FullModel ;
+  md:Model.DependentOn <urn:uuid:869a44b5-7ab5-4bcf-9d58-1c9e750a6f20> ;
+  md:Model.DependentOn <urn:uuid:d6cde6dd-1fe0-4e6a-8a85-d5eb08e36bed> ;
+  md:Model.created "2018-03-20T10:43:00Z" ;
+  md:Model.description "CGM Test model ElectricalProperties" ;
+  md:Model.modelingAuthoritySet "http://www.Statnett.no/Asset/Nordic44" ;
+  md:Model.profile "http://iec.ch/TC57/CIM/ElectricalProperties/2/0" ;
+  md:Model.scenarioTime "2018-03-20T00:00:00Z" ;
+  md:Model.version "03" .
+
+<urn:uuid:85e930e3-5409-4f2a-b343-5fd271d1a348> a cim:OperatingShare ;
+  cim:OperatingShare.OperatingParticipant <urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3> ;
+  cim:OperatingShare.PowerSystemResource <urn:uuid:aef77d7f-3c07-4b17-892e-d28181107657> ;
+  cim:OperatingShare.percentage "1" .
+
+<urn:uuid:9581c2ef-822a-497c-9368-b393e1d1519a> a cim:OperatingShare ;
+  cim:OperatingShare.OperatingParticipant <urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3> ;
+  cim:OperatingShare.PowerSystemResource <urn:uuid:aef77d7f-3c07-4b17-892e-d28181107657> ;
+  cim:OperatingShare.percentage "1" .
+
+<urn:uuid:9a675d44-b289-4968-90f5-d2df30a95284> a cim:SwitchPhase ;
+  cim:IdentifiedObject.description "Phase C Arendal 300 Kristiansand 1 A Breaker" ;
+  cim:IdentifiedObject.name "C ARENDAL 300KR1 AB_S" ;
+  cim:PowerSystemResource.AssetDatasheet <urn:uuid:6e2752f2-d4f3-11e7-9296-cec278b6b50a> ;
+  cim:SwitchPhase.Switch <urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b> ;
+  cim:SwitchPhase.normalOpen "false" ;
+  cim:SwitchPhase.phaseSide1 <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.C> ;
+  cim:SwitchPhase.phaseSide2 <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.C> .
+
+<urn:uuid:a0770620-0d29-44a9-94c4-bc68bcd7cbac> a cim:ACLineSegmentPhase ;
+  cim:ACLineSegmentPhase.ACLineSegment <urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:ACLineSegmentPhase.phase <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.A> ;
+  cim:ACLineSegmentPhase.sequenceNumber "1" ;
+  cim:IdentifiedObject.description "Phase A 300 kV Kristiansand - Arendal" ;
+  cim:IdentifiedObject.name "A 300KRISTIAN-ARENDAL" ;
+  cim:PowerSystemResource.AssetDatasheet <urn:uuid:7f618ac4-d4da-11e7-9296-cec278b6b50a> .
+
+<urn:uuid:a17e9cb8-98d2-5544-8595-7ec533e070a8> a cim:Line ;
+  cim:IdentifiedObject.name "LC 300KRISTIAN-ARENDAL" ;
+  cim:Line.Region <urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f> .
+
+<urn:uuid:b1ae45df-bf3d-414e-9a31-aff6fc8ef198> a cim:CurrentLimit ;
+  cim:CurrentLimit.value "7320" ;
+  cim:IdentifiedObject.description "CurrentLimit TATL 20 degree Celsius" ;
+  cim:IdentifiedObject.name "CL_TATL_20degreeCelsius" ;
+  cim:OperationalLimit.OperationalLimitSet <urn:uuid:d7416808-1485-441f-8600-e5ff486c720c> ;
+  cim:OperationalLimit.OperationalLimitType <urn:uuid:f1769a40-9aeb-11e5-91da-b8763fd99c5f> .
+
+<urn:uuid:c85a7eaa-5e23-4602-bc05-1f6ec6f814bd> a cim:SwitchPhase ;
+  cim:IdentifiedObject.description "Phase A Arendal 300 Kristiansand 1 A Breaker" ;
+  cim:IdentifiedObject.name "A ARENDAL 300KR1 AB_S" ;
+  cim:PowerSystemResource.AssetDatasheet <urn:uuid:6e2752f2-d4f3-11e7-9296-cec278b6b50a> ;
+  cim:SwitchPhase.Switch <urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b> ;
+  cim:SwitchPhase.normalOpen "false" ;
+  cim:SwitchPhase.phaseSide1 <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.A> ;
+  cim:SwitchPhase.phaseSide2 <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.A> .
+
+<urn:uuid:d7416808-1485-441f-8600-e5ff486c720c> a cim:OperationalLimitSet ;
+  cim:IdentifiedObject.description "OperationalLimitSet 20 degree Celsius for 300KRISTIAN-ARENDAL" ;
+  cim:IdentifiedObject.name "OLS 20dg 300KRISTIAN-ARENDAL" ;
+  cim:OperationalLimitSet.Equipment <urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f> ;
+  entsoe2:OperationalLimitSet.RateTemperature <urn:uuid:d04f954f-2038-4a52-bdcc-deffc4628f47> .
+
+<urn:uuid:dd3fef9f-298c-460e-98a6-c1876a18626a> a cim:ACLineSegmentPhase ;
+  cim:ACLineSegmentPhase.ACLineSegment <urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:ACLineSegmentPhase.phase <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.C> ;
+  cim:ACLineSegmentPhase.sequenceNumber "3" ;
+  cim:IdentifiedObject.description "Phase B 300 kV Kristiansand - Arendal" ;
+  cim:IdentifiedObject.name "C 300KRISTIAN-ARENDAL" ;
+  cim:PowerSystemResource.AssetDatasheet <urn:uuid:7f618ac4-d4da-11e7-9296-cec278b6b50a> .
+
+<urn:uuid:e5943b0f-8c95-ef4c-a6f6-16b9ace48341> a cim:Bay ;
+  cim:Bay.VoltageLevel <urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:IdentifiedObject.description "Arendal 300 Kristiansand 1 Bay" ;
+  cim:IdentifiedObject.name "ARENDAL 300KR1" .
+
+<urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f> a cim:Substation ;
+  cim:IdentifiedObject.name "ARENDAL" ;
+  cim:Substation.Region <urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f> .
+
+<urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f> a cim:VoltageLevel ;
+  cim:IdentifiedObject.name "ARENDAL 300" ;
+  cim:VoltageLevel.BaseVoltage <urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4> ;
+  cim:VoltageLevel.Substation <urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f> .
+
+<urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f> a cim:ACLineSegment ;
+  cim:ACLineSegment.bch "0.0002222222" ;
+  cim:ACLineSegment.r "1.8" ;
+  cim:ACLineSegment.x "19.8" ;
+  cim:ConductingEquipment.BaseVoltage <urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4> ;
+  cim:Conductor.length "0" ;
+  cim:Equipment.EquipmentContainer <urn:uuid:a17e9cb8-98d2-5544-8595-7ec533e070a8> ;
+  cim:Equipment.aggregate "false" ;
+  cim:Equipment.normallyInService "true" ;
+  cim:IdentifiedObject.description "Balance line representation 300 kV Kristiansand - Arendal" ;
+  cim:IdentifiedObject.name "300KRISTIAN-ARENDAL" .
+
+<urn:uuid:f56758a8-12a0-7648-b04b-f32ec3247e3b> a cim:Breaker ;
+  cim:ConductingEquipment.BaseVoltage <urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4> ;
+  cim:Equipment.EquipmentContainer <urn:uuid:e5943b0f-8c95-ef4c-a6f6-16b9ace48341> ;
+  cim:Equipment.aggregate "false" ;
+  cim:IdentifiedObject.description "Arendal 300 Kristiansand 1 A Breaker" ;
+  cim:IdentifiedObject.name "ARENDAL 300KR1 AB_S" ;
+  cim:ProtectedSwitch.breakingCapacity "2000" ;
+  cim:Switch.normalOpen "false" ;
+  cim:Switch.ratedCurrent "2000" ;
+  cim:Switch.retained "false" .
+
+<urn:uuid:f618213b-0233-4c16-b1ac-8b78820a433e> a cim:ACLineSegmentPhase ;
+  cim:ACLineSegmentPhase.ACLineSegment <urn:uuid:f1769cd4-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:ACLineSegmentPhase.phase <http://iec.ch/TC57/2013/CIM-schema-cim16#SinglePhaseKind.B> ;
+  cim:ACLineSegmentPhase.sequenceNumber "2" ;
+  cim:IdentifiedObject.description "Phase B 300 kV Kristiansand - Arendal" ;
+  cim:IdentifiedObject.name "B 300KRISTIAN-ARENDAL" ;
+  cim:PowerSystemResource.AssetDatasheet <urn:uuid:7f618ac4-d4da-11e7-9296-cec278b6b50a> .
+
+<urn:uuid:f72994d8-9857-b349-a4ae-2e3c9652d5bc> a cim:Bay ;
+  cim:Bay.VoltageLevel <urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:IdentifiedObject.description "Arendal 300 Asker 1 Bay" ;
+  cim:IdentifiedObject.name "ARENDAL 300AS1" .
+
+
+}

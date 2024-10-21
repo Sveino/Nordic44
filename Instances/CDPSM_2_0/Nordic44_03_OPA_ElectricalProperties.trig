@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cim: <http://iec.ch/TC57/CIM/CIM100#> .
+@prefix entsoe2: <http://entsoe.eu/CIM/SchemaExtension/3/2#> .
+@prefix md: <http://iec.ch/TC57/61970-552/ModelDescription/1#> .
+
+<urn:uuid:79522a2c-a7c5-425e-b9da-565364cc659c> { # model graph
+
+<urn:uuid:22e5ddcf-ac23-b449-bc4f-83336535f7c2> a cim:Breaker ;
+  cim:ConductingEquipment.BaseVoltage <urn:uuid:2dd90169-bdfb-11e5-94fa-c8f73332c8f4> ;
+  cim:Equipment.EquipmentContainer <urn:uuid:f72994d8-9857-b349-a4ae-2e3c9652d5bc> ;
+  cim:Equipment.aggregate "false" ;
+  cim:IdentifiedObject.description "Arendal 300 Asker 1 A Breaker" ;
+  cim:IdentifiedObject.name "ARENDAL 300AS1 AB_S" ;
+  cim:PowerSystemResource.AssetDatasheet <urn:uuid:82d61e6f-bf85-4aa9-8276-457dbcdb5198> ;
+  cim:ProtectedSwitch.breakingCapacity "2000" ;
+  cim:Switch.normalOpen "false" ;
+  cim:Switch.ratedCurrent "2000" ;
+  cim:Switch.retained "false" .
+
+<urn:uuid:79522a2c-a7c5-425e-b9da-565364cc659c> a md:FullModel ;
+  md:Model.DependentOn <urn:uuid:869a44b5-7ab5-4bcf-9d58-1c9e750a6f20> ;
+  md:Model.DependentOn <urn:uuid:d6cde6dd-1fe0-4e6a-8a85-d5eb08e36bed> ;
+  md:Model.created "2018-03-22T07:00:00Z" ;
+  md:Model.description "CGM Test model ElectricalProperties for OperatingParticipant A" ;
+  md:Model.modelingAuthoritySet "http://www.Statnett.no/Asset/Nordic44" ;
+  md:Model.profile "http://iec.ch/TC57/CIM/ElectricalProperties/2/0" ;
+  md:Model.scenarioTime "2018-03-23T00:00:00Z" ;
+  md:Model.version "03" .
+
+<urn:uuid:85e930e3-5409-4f2a-b343-5fd271d1a348> a cim:OperatingShare ;
+  cim:OperatingShare.OperatingParticipant <urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3> ;
+  cim:OperatingShare.PowerSystemResource <urn:uuid:22e5ddcf-ac23-b449-bc4f-83336535f7c2> ;
+  cim:OperatingShare.percentage "1" .
+
+<urn:uuid:dfbe5e37-2794-44cb-8c60-62789be22cd3> a cim:OperatingParticipant ;
+  cim:IdentifiedObject.name "Operating Participant A" .
+
+<urn:uuid:f72994d8-9857-b349-a4ae-2e3c9652d5bc> a cim:Bay ;
+  cim:Bay.VoltageLevel <urn:uuid:f1769672-9aeb-11e5-91da-b8763fd99c5f> ;
+  cim:IdentifiedObject.description "Arendal 300 Asker 1 Bay" ;
+  cim:IdentifiedObject.name "ARENDAL 300AS1" .
+
+
+}
