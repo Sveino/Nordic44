@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?iec61970-552 version="2.0"?>
 
 <!-- Change log:
 	2018-03-22: Initial version
@@ -28,9 +27,9 @@
     <md:Model.modelingAuthoritySet>http://www.Statnett.no/Asset/Nordic44</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/CIM/Asset/2/0</md:Model.profile>
 	<!-- Depending on AssetCatalogue file -->
-    <md:Model.DependentOn rdf:resource="urn:uuid:d869a44b5-7ab5-4bcf-9d58-1c9e750a6f20" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:869a44b5-7ab5-4bcf-9d58-1c9e750a6f20" />
 	<!-- Depending on ElectricalProperties file -->
-    <md:Model.DependentOn rdf:resource="urn:uuid:1cbcbc2c-1cf1-48f0-b3fd-2c28444c21b" />		
+    <md:Model.DependentOn rdf:resource="urn:uuid:1cbcbc2c-1cf1-48f0-b3fd-2c28444c21ba" />		
   </md:FullModel>
 
   

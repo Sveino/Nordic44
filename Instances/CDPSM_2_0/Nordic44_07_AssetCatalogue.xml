@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?iec61970-552 version="2.0"?>
 
 <!-- Change log:
 	2017-11-29: Initial version
@@ -26,7 +25,7 @@
 		>		
 	
 	<!-- The header information could be replaced by Manifest profile. The header is added to identify relevant information. -->
-  <md:FullModel rdf:about="urn:uuid:d869a44b5-7ab5-4bcf-9d58-1c9e750a6f20">
+  <md:FullModel rdf:about="urn:uuid:869a44b5-7ab5-4bcf-9d58-1c9e750a6f20">
     <md:Model.created>2018-02-23T14:42:00Z</md:Model.created>
     <md:Model.scenarioTime>2018-02-23T00:00:00Z</md:Model.scenarioTime>
     <md:Model.version>07</md:Model.version>

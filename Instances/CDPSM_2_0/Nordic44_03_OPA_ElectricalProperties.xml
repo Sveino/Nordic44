@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?iec61970-552 version="2.0"?>
 
 <!-- Change log:
 	2018-03-22: Initial version based on previous example
@@ -28,7 +27,7 @@
 	<!-- Depending on Boundary OPA-OPB  Electrical Properties file -->
     <md:Model.DependentOn rdf:resource="urn:uuid:d6cde6dd-1fe0-4e6a-8a85-d5eb08e36bed" />		
 	<!-- Depending on AssetCatalogue file -->
-    <md:Model.DependentOn rdf:resource="urn:uuid:d869a44b5-7ab5-4bcf-9d58-1c9e750a6f20" />	
+    <md:Model.DependentOn rdf:resource="urn:uuid:869a44b5-7ab5-4bcf-9d58-1c9e750a6f20" />	
   </md:FullModel>
 
   
