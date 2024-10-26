@@ -11,14 +11,14 @@ Change log:
 -->
 
 <rdf:RDF  xmlns:cim="http://iec.ch/TC57/CIM/CIM100#" 
-			xmlns:dm="http:://iec.ch/TC57/61970-552/DifferenceModel/1#" 
+			xmlns:dm="http://iec.ch/TC57/61970-552/DifferenceModel/1#" 
 			xmlns:entsoe="http://entsoe.eu/CIM/SchemaExtension/3/1#" 
 			xmlns:entsoe2="http://entsoe.eu/CIM/SchemaExtension/3/2#" 
 			xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" 
 			xmlns:pti="http://www.pti-us.com/PTI_CIM-schema-cim16#" 
 			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 			
-   <dm:DifferenceModel rdf:about="">
+   <dm:DifferenceModel rdf:about="urn:uuid:e5c60c59-b310-4d78-bd07-6e12f4ce83b2">
       <dm:reverseDifferences rdf:parseType="Statements">
 	  		<cim:OperatingShare rdf:about="urn:uuid:85e930e3-5409-4f2a-b343-5fd271d1a348">
 				<!--Operating Participant A-->

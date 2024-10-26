@@ -5,7 +5,6 @@
 <!--
 	This is a new profile in CGMES 2.5 and are serialized according to IEC 61970-552 Ed2. 
 -->
-<?iec61970-552 version="2.0"?>
 
 <rdf:RDF xmlns:fw="http://entsoe.eu/CIM/Framework/1/0#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <!--
